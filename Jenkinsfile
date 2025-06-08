@@ -26,7 +26,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                bat 'java -jar build/libs/MyFirstGradle-0.0.1-SNAPSHOT.jar'
+                bat 'java -jar app/build/libs/MyFirstGradle-0.0.1-SNAPSHOT.jar'
             }
         }
     }
