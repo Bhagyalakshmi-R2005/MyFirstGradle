@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Bhagyalakshmi-R2005/HelloWorldGradle.git'
+                git branch: 'main', url: ''
             }
         }
 
@@ -26,7 +26,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                bat 'java -jar build/libs/HelloGradle-0.0.1-SNAPSHOT.jar'
+                bat 'java -jar build/libs/MyFirstGradle-0.0.1-SNAPSHOT.jar'
             }
         }
     }
